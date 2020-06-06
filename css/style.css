@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: green;
+    justify-content: center;
+}
+
+input, label, select{
+    margin: 0.5em;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+}
+
+.flexBox{
+    width: 50em;
+    display: flex;
+    flex-flow: row;
+    align-items: initial;
+    flex-wrap: wrap;
+}
+
+.label{
+    width: 10em;
+    display: flex;
+    flex-flow: column;
+}
+
+.inputBlock{
+    width: 40em;
+    display: flex;
+    flex-flow: column;
+
+
+}
+
+.telNam{
+    display: inherit;
+}
+
+.telNam > input{
+    flex-grow: 0.3;
+}
+
+#email{
+    flex-grow: 1;
+}
+
+.Name{
+    display: flex;
+    justify-content: space-between;
+}
+
+#firstName, #lastName{
+    flex-grow: 0.5;
+}
