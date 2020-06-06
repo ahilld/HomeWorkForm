@@ -13,34 +13,35 @@
         <h1>Contact form</h1>
         <p>Please fill your information and we'll be sending your order.</p>
         <div class="flexBox">
-            <div class="label">
-            <label for="firstName">Your name </label>
-            <label for="email">Your email</label>
-            <label for="tel">Phone*</label>
-            <label for="MS">Massage subject*</label>
-            <label for="Message">Message*</label>
-            </div>
-            <div class="inputBlock">
-                <div class="Name">
+            <div class="name">
+                    <label for="firstName">Your name </label>
                     <input id="firstName" type="text" placeholder="first name">
                     <input id="lastName" type="text" placeholder="last name">
                 </div>
-                <input id="email" type="email" placeholder="your_mail@mail.com">
-                <div class="telNam">
-                <input id="tel" type="text" name="phone" pattern="(?=.*[0-999]^.{3,3}$" placeholder="000" required>
-                    <input type="text" name="phone" pattern="(?=.*[0-999]^.{3,3}$" placeholder="000" required>
-                    <input type="text" name="phone" pattern="(?=.*[0-9999]^.{4,4}$" placeholder="0000" required>
+            <div class="email">
+                    <label for="email">Your email</label>
+                    <input id="email" type="email" placeholder="your_mail@mail.com">
                 </div>
-                <select id="MS" required>
+            <div class="telNam">
+                    <label for="tel">Phone*</label>
+                    <input id="tel" type="text" name="phone" pattern="(?=.*[0-999]^.{3,3}$" placeholder="000" required>
+                    <input name="phone2" pattern="(?=.*[0-999]^.{3,3}$" placeholder="000" required type="text">
+                    <input name="phone3" pattern="(?=.*[0-9999]^.{4,4}$" placeholder="0000" required type="text">
+                </div>
+            <div class="MS">
+                    <label for="MS">Massage subject*</label>
+                    <select id="MS" required>
                     <option>Search</option>
                     <option>Delivery</option>
                     <option>Post</option>
                     <option selected>Other</option>
-                </select>
-                <input id="Message" type="text" required>
+                </select></div>
+            <div class="message">
+                <label for="Message">Message*</label>
+                <textarea id="Message" rows="4" name="text" required></textarea>
             </div>
             <hr>
-    <button type="submit">submit form</button>
+            <button type="submit">submit form</button>
         </div>
     </form>
     </div>
